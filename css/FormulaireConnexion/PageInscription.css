@@ -1,0 +1,66 @@
+:root{
+    --themecolor: #ffc300;
+}
+
+*{
+    font-family: 'Segoe UI', Segoe;
+}
+
+body{
+     background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,0.1) 0%, rgba(0,19,255,0.10238091818758754) 25%, rgba(255,255,255,0) 50%, rgba(75,255,0,0.1) 75%, rgba(247,255,0,0.1) 100%); 
+    
+   }
+   #container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+   }
+   /* Bordered form */
+   form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+   }
+   #container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+   }
+   
+   /* Full-width inputs */
+   input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+   }
+   
+   /* Set a style for all buttons */
+   input[type=submit] {
+    background-color: var(--themecolor);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+   }
+   input[type=submit]:hover {
+    background-color: white;
+    color: var(--themecolor);
+    border: 1px solid var(--themecolor);
+   }
+   
+   select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+   }

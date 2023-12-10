@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Paiement</title>
+    <link rel="stylesheet" href="../css/PageMoyenDePaiement.css">
+    
+</head>
+<body>
+    <div id="container">
+        <h1>Confirmer votre paiement</h1>
+        <div id="premiere-ligne">
+            <div id="proprietaire">
+                <h3>Nom du titulaire de la carte</h3>
+                <div id="champ-de-saisie">
+                    <input type="text">
+                </div>
+            </div>
+            <div >
+                <h3>CVC</h3>
+                <div id="champ-de-saisie">
+                    <input type="mot-de-passe">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>Numéro de la carte bancaire</h3>
+                <div id="champ-de-saisie">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>Mois et année d'expiration de la carte bancaire</h3>
+            <div id="selection">
+                <div class="date">
+                    <select name="months" class="months">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                      </select>
+                      <select name="years" class="years">
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                      </select>
+                </div>
+                <div class="cards">
+                    <img src="../images/mc.png" alt="MasterCard">
+                    <img src="../images/vi.png" alt="Visa">
+                    <img src="../images/pp.png" alt="PayPal">
+                </div>
+            </div>    
+        </div>
+        <a href="">Confirm</a>
+    </div>
+</body>
+</html>

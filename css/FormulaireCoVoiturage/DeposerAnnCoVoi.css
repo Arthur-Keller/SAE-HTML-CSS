@@ -1,0 +1,102 @@
+:root{
+    --themecolor: #ffc300;
+}
+*{
+    font-family: 'Segoe UI', Segoe;
+}
+
+
+#container{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr ; 
+    grid-template-rows: repeat(15, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ". . . . . . ."
+      ". NbPlace NbPlace NbPlace NbPlace NbPlace ."
+      ". Place Place Place Place Place ."
+      ". . . . . . ."
+      ". Ville Ville . Code Code ."
+      ". City City . CodePostal CodePostal ."
+      ". . . . . . ."
+      ". Pays Pays . DHM DHM ."
+      ". countries countries . meeting-time meeting-time ."
+      ". . . . . . ."
+      ". GratuitOuNon GratuitOuNon . SiPayant SiPayant ."
+      ". ChoixGratuit ChoixGratuit . Prix Prix ."
+      ". . . . . . ."
+      ". . Boutton Boutton Boutton . ."
+      ". . . . . . .";
+      
+    font-weight: 700;
+    text-align: center;
+}
+
+#NbPlace { 
+    grid-area: NbPlace;
+    text-align: center;
+}
+#Place { 
+    grid-area: Place; 
+    border-color: var(--themecolor);
+    border-style: inset;
+    border-width: 2px;
+    background-color: #FFFFFF;
+}
+
+#GratuitOuNon{
+    grid-area: GratuitOuNon;
+    border-color: var(--themecolor);
+}
+#ChoixGratuit{
+    grid-area: ChoixGratuit;
+    border-color: var(--themecolor);
+    border-style: inset;
+    border-width: 2px;
+    background-color: #FFFFFF;
+}
+
+#SiPayant{
+    grid-area: SiPayant;
+    border-color: var(--themecolor);
+}
+#Prix{
+    grid-area: Prix;
+    border-color: var(--themecolor);
+}
+
+#Ville { grid-area: Ville; }
+#City{ 
+    grid-area: City;
+    border-color: var(--themecolor);
+}
+
+#Code { grid-area: Code; }
+#CodePostal { 
+    grid-area: CodePostal; 
+    border-color: var(--themecolor);
+}
+
+#Pays { grid-area: Pays; }
+#countries { 
+    grid-area: countries; 
+    border-color: var(--themecolor);
+    border-style: inset;
+    border-width: 2px;
+    background-color: #FFFFFF;
+}
+
+#DHM { grid-area: DHM; }
+#meeting-time { 
+    grid-area: meeting-time;
+    border-color: var(--themecolor);
+}
+
+#Boutton { grid-area: Boutton; }
+
+main>section>div>#Boutton>button:hover{
+    text-decoration:underline;
+    text-decoration-thickness: 2px;
+}
+

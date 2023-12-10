@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- importer le fichier de style -->
+        <link rel="stylesheet" href="../css//FormulaireConnexion/PageConnexion.css" media="screen" type="text/css" />
+        <link rel="icon" type="image/png" sizes="16x16" href="https://findicons.com/files/icons/2796/metro_uinvert_dock/256/microsoft_new_logo_alt.png">
+    </head>
+    <body>
+        <div id="container">
+            <!-- zone de connexion -->
+            <form method="POST" action='./pageRedirection.html'>
+                <h1>Inscription</h1>
+                <label><b>Sexe</b></label>
+                <select id="sexe">
+                    <option value="C" name="choix">Selectionner</option>
+                    <option value="F" name="sexe">Femme</option>
+                    <option value="H" name="sexe">Homme</option>
+                    <option value="A" name="sxe">Autre</option>
+                  </select>
+
+                <label><b>Prénom</b></label>
+                <input type="text" placeholder="Entrer votre prénom" name="Prénom" required>
+
+                <label><b>Nom</b></label>
+                <input type="text" placeholder="Entrer votre nom de famille" name="Nom" required>
+
+                <label><b>Adresse mail</b></label>
+                <input type="email" placeholder="Entrer votre adresse mail" name="AdresseMail" required>
+
+                <label><b>Mot de passe</b></label>
+                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+
+                <label><b>Confirmer votre mot de passe</b></label>
+                <input type="password" placeholder="Confirmer le mot de passe" name="PasswordVerification" required>
+
+                <label><b>Numéro de téléphone</b></label>
+                <input type="text" placeholder="Entrer votre numéro de téléphone" name="N°Téléphone" required>
+
+                <label><b>Adresse</b></label>
+                <input type="text" placeholder="Entrer votre adresse" name="Adresse" required>
+
+                <label><b>Ville</b></label>
+                <input type="text" placeholder="Entrer votre ville" name="Ville" required>
+
+                <label><b>Adresse</b></label>
+                <input type="text" placeholder="Entrer votre code postal" name="Postal" required>
+
+                <input type="submit" id='submit' value='LOGIN' >
+                <p>Vous avez un compte ? <a href="./PageConnexion.html">Connectez-vous !</a></p>
+                <p>Revenir sur la page <a href="./pagesAcceuil.html">d'acceuil</a></p>
+            </form>
+        </div>
+    </body>
+</html>

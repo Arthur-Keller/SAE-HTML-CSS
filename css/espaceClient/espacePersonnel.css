@@ -1,0 +1,33 @@
+header{
+  height: 300px;
+  background-size: cover;
+}
+main>nav>ul{
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  margin: 20px 20px;
+
+}
+main>nav>ul>a>li{
+  list-style-type: none;
+  border: 1px solid var(--themecolor);
+  box-shadow: 5px 4px 10px var(--themecolor);
+  margin:0 20px 20px 0;
+  padding:15px;
+  
+  background-color: white;
+  width:300px;
+  transition-property:background-color,width;
+  transition-duration: 2s;
+}
+
+main>nav>ul>a{
+  text-decoration: none;
+  color:black;
+}
+
+main>nav>ul>a>li:hover{
+  width: 350px;
+  background-color: var(--themecolor);
+}

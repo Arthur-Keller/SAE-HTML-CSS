@@ -1,0 +1,46 @@
+main{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+main>div{
+  border:2px solid;
+  width: 40%;
+  height: 500px;
+  margin: 100px 0;
+  padding: 1%;
+  overflow: scroll;
+  transition-property: background-color,opacity;
+  transition-duration: 3s;  
+}
+main>div:hover{
+  background-color: var(--themecolor);
+  
+  
+}
+
+main>div>div{
+  border: 2px dotted;
+  background-color: #FFFFFF;
+  padding: 2%;
+  margin: 1% 0;
+  transition-property:background-color, opacity; 
+}
+
+main>div>h2{
+  text-decoration: underline;
+  text-decoration-color: var(--themecolor);
+}
+main>div>div>a{
+  border-radius: 6px;
+  text-align: center;
+  padding: 1%;
+  background: var(--themecolor);
+  color: #000000;
+  font-weight: 600;
+  width: fit-content;
+  text-decoration: none;
+}
+main>div>div>a:hover{
+  text-decoration: underline;
+}

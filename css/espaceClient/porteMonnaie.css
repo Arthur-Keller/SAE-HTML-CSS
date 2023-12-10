@@ -1,0 +1,29 @@
+main>div{
+  border:1px solid black;
+  display: flex;
+  width:50%;
+  border-top-left-radius:1000px;
+  border-bottom-right-radius:1000px;
+  margin:10% auto;
+  padding: none;
+  
+}
+main>div>div{
+  text-align: center;
+}
+main>h2{
+  text-decoration: underline var(--themecolor);
+  margin: auto;
+}
+main>div>div:first-of-type{
+  background: rgb(255,195,0);
+  background: radial-gradient(circle, rgba(255,195,0,0.3) 0%, rgba(255,195,0,0.3012604700083158) 100%); 
+  border-top-left-radius: 1000px;
+  width:19.4%;
+}
+main>div>div:last-of-type{
+  background: rgb(255,0,0);
+  background: radial-gradient(circle, rgba(255,0,0,0.3) 0%, rgba(255,0,0,0.3) 100%); 
+  border-bottom-right-radius: 1000px;
+  width:100%;
+}

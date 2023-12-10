@@ -1,0 +1,23 @@
+:root{
+    --themecolor: #ffc300;
+}
+*{
+    font-family: 'Segoe UI', Segoe;
+}
+body{
+    background: rgb(255,239,13);
+    background: radial-gradient(circle, rgba(255,239,13,0.09397755684304976) 0%, rgba(241,181,64,0.35728287897190125) 100%); 
+}
+div{
+    border: 3px solid black;
+    box-shadow: 5px 10px 15px black;
+    width:fit-content;
+    padding : 50px;
+    margin:auto;
+    margin-top:100px;
+    background-color: var(--themecolor);
+    text-align: center;
+}
+div>h1{
+    font-size: 60px;
+}

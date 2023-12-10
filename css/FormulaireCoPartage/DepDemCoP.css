@@ -1,0 +1,98 @@
+:root{
+    --themecolor: #ffc300;
+}
+*{
+    font-family: 'Segoe UI', Segoe;
+}
+/*SECTION*/
+
+#container{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr; 
+    grid-template-rows: repeat(17, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ". Location  Location Location Location Location ."
+    ". . Type Type Type . ."
+    ". . . . . . ."
+    ". Ville Ville . Code Code ."
+    ". City City . CodePostal CodePostal ."
+    ". . . . . . ."
+    ". Pays Pays Pays Pays Pays ."
+    ". . countries countries countries . ."
+    ". . . . . . ."
+    ". DHMDebut DHMDebut . DHMFin DHMFin ."
+    ". meeting-time-start meeting-time-start . meeting-time-end meeting-time-end ."
+    ". . . . . . ."
+    ". . SiPayant SiPayant SiPayant . ."
+    ". . Prix Prix Prix . ."
+    ". . . . . . ."
+    ". . Boutton Boutton Boutton . ."
+    ". . . . . . .";
+    font-weight: 700;
+    text-align: center;
+    background-color: #FFFFFF; 
+}
+#City:focus, #CodePostal:focus, #meeting-time-start:focus, #meeting-time-end:focus, #countries:focus, #Type:focus{
+    box-shadow: 2.5px 2.5px 2.5px var(--themecolor);
+}
+
+#Location { 
+    grid-area: Location;
+}
+#Type { 
+    grid-area: Type; 
+    border-color: var(--themecolor);   
+    border-style: inset;
+    border-width: 2px; 
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+#Ville { grid-area: Ville; }
+#City{ 
+    grid-area: City;
+    border-color: var(--themecolor);
+}
+
+#Code { grid-area: Code; }
+#CodePostal { 
+    grid-area: CodePostal; 
+    border-color: var(--themecolor);   
+}
+
+#Pays { grid-area: Pays; }
+#countries { 
+    grid-area: countries; 
+    border-color: var(--themecolor);  
+    border-style: inset;
+    border-width: 2px; 
+    background-color: #FFFFFF;
+}
+
+#DHMDebut { grid-area: DHMDebut; }
+#meeting-time-start { 
+    grid-area: meeting-time-start; 
+    border-color: var(--themecolor); 
+}
+
+#DHMFin { grid-area: DHMFin; }
+#meeting-time-end { 
+    grid-area: meeting-time-end; 
+    border-color: var(--themecolor); 
+}
+
+#SiPayant{grid-area: SiPayant;}
+#Prix{
+    grid-area: Prix;
+    border-color: var(--themecolor);
+}
+
+#Boutton { 
+    grid-area: Boutton; 
+}
+main>section>div>#Boutton>button:hover{
+    text-decoration:underline;
+    text-decoration-thickness: 2px;
+}
